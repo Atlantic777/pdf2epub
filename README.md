@@ -30,4 +30,4 @@ WARNING: This is just a proof of concept sketch, there are many bugs.
 
 ## Screenshot
 
-[sshot]: http://i.imgur.com/i3B35DW.png "Current screenshot"
+![sshot](http://i.imgur.com/i3B35DW.png "Current screenshot")
