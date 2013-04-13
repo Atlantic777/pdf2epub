@@ -155,4 +155,8 @@ void MainWindow::on_spin_block_valueChanged(int arg1)
     p.setBrush(QBrush(QColor(0, 255, 0, 80)));
     p.drawRect(roi);
     ui->label_img->update();
+
+    Block b = c.all_blocks.at(arg1);
+    float ratio = b.get_ratio();
+    ui->label_ratio_res->setText(QString::number(ratio));
 }

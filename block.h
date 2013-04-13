@@ -25,6 +25,7 @@ public:
     QPoint topleft;
     QSize size;
     Block *root;
+    float get_ratio();
 };
 
 #endif // ANALISER_H

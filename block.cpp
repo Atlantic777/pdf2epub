@@ -196,3 +196,27 @@ QPixmap Block::get_pixmap()
 {
     return QPixmap::fromImage(Converter::Mat2QImage(&original));
 }
+
+float Block::get_ratio()
+{
+    float black = 0;
+    float white = 0;
+    int sum = original.cols*original.rows;
+
+    for(int i = 0; i < original.cols; i++)
+    {
+        for(int j = 0; j < original.rows; j++)
+        {
+            if(original.data[j*original.cols + i] < 255)
+            {
+                black++;
+            }
+            else
+            {
+                white++;
+            }
+        }
+    }
+
+    return black/(original.cols*original.rows)*100;
+}
