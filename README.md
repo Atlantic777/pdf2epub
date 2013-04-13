@@ -27,3 +27,7 @@ WARNING: This is just a proof of concept sketch, there are many bugs.
 - Guess block type (text, graphics, table, math, code)
 - Semantic analysis and supervised semi-automated layout learning
 - Generating ePUB output
+
+## Screenshot
+
+[sshot]: http://i.imgur.com/i3B35DW.png "Current screenshot"
